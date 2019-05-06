@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị fibonanci</title>
+</head>
+<body>
+    <script>
+        let n=Number(prompt("Nhập số lượng số Fibonanci cần hiển thị: "));
+        let result="";
+        let count=1;
+        let i1=0, i2=1;
+        while(count<=n)
+        {
+            if (count==1) result="0";
+            if (count==2) result="0 1";
+            if (count>2){
+                k=i1 + i2;
+                i1=i2;
+                i2=k;
+                result+=" " +k;
+            }
+            count++;
+        }
+        document.write(result);
+    </script>
+</body>
+</html>

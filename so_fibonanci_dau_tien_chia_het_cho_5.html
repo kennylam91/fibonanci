@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>so fibonanci dau tien chia het cho 5</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị fibonanci</title>
+</head>
+<body>
+<script>
+    let result;
+    let count=2;
+    let i1=1, i2=1;
+    while(true)
+    {
+        if (count==1) result=1;
+        if (count==2) result=1;
+        if (count>2){
+            k=i1 + i2;
+            i1=i2;
+            i2=k;
+            result=k;
+
+        }
+        if(result%5==0) break;
+        count++;
+    }
+    document.write(result);
+</script>
+</body>
+</html>
+</body>
+</html>
